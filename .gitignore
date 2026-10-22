@@ -1,0 +1,31 @@
+# Python virtual environment
+venv/
+env/
+ENV/
+*.venv/
+
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Raw datasets (keep repository lightweight and within GitHub limits)
+data/raw/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Scratch & temporary workspace files
+scratch/

@@ -1,0 +1,23 @@
+{
+  "name": "phishguard",
+  "version": "1.0.0",
+  "description": "PhishGuard - Machine Learning Phishing URL Detector",
+  "main": "start.js",
+  "scripts": {
+    "start": "node start.js",
+    "dev": "node start.js",
+    "predict": "node -e \"const { spawn } = require('child_process'); const p = process.platform === 'win32' ? 'venv\\\\Scripts\\\\python.exe' : 'venv/bin/python'; spawn(p, ['src/predict.py', ...process.argv.slice(1)], { stdio: 'inherit', shell: true });\"",
+    "train": "node -e \"const { spawn } = require('child_process'); const p = process.platform === 'win32' ? 'venv\\\\Scripts\\\\python.exe' : 'venv/bin/python'; spawn(p, ['src/train.py'], { stdio: 'inherit', shell: true });\"",
+    "evaluate": "node -e \"const { spawn } = require('child_process'); const p = process.platform === 'win32' ? 'venv\\\\Scripts\\\\python.exe' : 'venv/bin/python'; spawn(p, ['src/evaluate.py'], { stdio: 'inherit', shell: true });\""
+  },
+  "keywords": [
+    "phishing",
+    "url-detector",
+    "machine-learning",
+    "cybersecurity",
+    "streamlit",
+    "xgboost"
+  ],
+  "author": "",
+  "license": "MIT"
+}
